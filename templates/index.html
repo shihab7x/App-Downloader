@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Video Downloader</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+        h1 {
+            color: #4a5568;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        p {
+            color: #718096;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #667eea;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        .features {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 12px;
+            color: #a0aec0;
+        }
+        .badge {
+            background: #edf2f7;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="container">
+        <h1>Video Downloader</h1>
+        <p>Download videos from FB, TikTok, YT & more</p>
+        
+        <form action="/download" method="POST">
+            <input type="text" name="url" placeholder="Paste video link here..." required>
+            <button type="submit">Download Now</button>
+        </form>
+
+        <div class="features">
+            <span class="badge">No Watermark</span>
+            <span class="badge">High Quality</span>
+            <span class="badge">Fast Speed</span>
+        </div>
+    </div>
+
+</body>
+          </html>
